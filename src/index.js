@@ -3,10 +3,21 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Login from './pages/Login';
+import { BrowserRouter } from 'react-router-dom';
+import RegisterUser from './pages/RegisterUser';
+import Routes from './Routes/routes';
+import MeusPedidos from './pages/MeusPedidos';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+   {
+  <Routes></Routes>
+  //<Routes/>
+  //<MeusPedidos/>
+  } 
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
