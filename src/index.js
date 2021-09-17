@@ -11,13 +11,14 @@ import MeusPedidos from './pages/MeusPedidos';
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
    {
-  <Routes></Routes>
+    //<BrowserRouter>
+  //<Routes></Routes>
   //<Routes/>
   //<MeusPedidos/>
+  <App/>
+    //</BrowserRouter>
   } 
-    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
