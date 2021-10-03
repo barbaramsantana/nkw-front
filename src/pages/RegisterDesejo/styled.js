@@ -13,6 +13,17 @@ export const ContainerForm = styled.div`
   padding-bottom: 20px;
 
 `;
+export const NewCadastroTitle = styled.h1`
+font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 35px;
+line-height: 30px;
+/* identical to box height, or 86% */
+
+
+color: #3A3C4E;
+`;
 //font-family: NTR;
 export const Logo = styled.div`
 font-style: normal;
@@ -37,14 +48,13 @@ color: #3A3C4E;
 export const Label = styled.label`
 font-family: Poppins;
 font-style: normal;
-font-weight: normal;
-font-size: 30px;
+font-weight: 600;
+font-size: 25px;
 line-height: 30px;
-justify-content: left;
-  align-items: left;
-  text-align: left;
+/* or 120% */
 
-color: #3A3C4E;
+
+color: #8F9BB3;
 `;
 
 export const Input = styled.input`
@@ -67,6 +77,16 @@ font-style: normal;
 font-weight: 600;
 font-size: 25px;
 line-height: 30px;
+border-bottom: 0px;
+border:none;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+&:hover{
+  color: #BB6BD9;
+  background:#FFFFFF;
+  border-color:#BB6BD9;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 `;
 
 export const TextoLink = styled.h2`

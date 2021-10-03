@@ -24,11 +24,13 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 `;
 
 export const Titulo1 = styled.div`
-font-family: Poppins;
+font-family: Poppins, sans-serif;
 font-style: normal;
-font-weight: 600;
-font-size: 40px;
+font-weight: normal;
+font-size: 35px;
 line-height: 30px;
+margin-top: 20px;
+/* identical to box height, or 86% */
 
 
 color: #3A3C4E;

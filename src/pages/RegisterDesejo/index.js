@@ -2,16 +2,17 @@ import React from 'react';
 import {Link, withRouter} from "react-router-dom";
 import Cabecalho from '../../components/Cabecalho';
 import Lista from '../../components/Lista';
-import { Button, ContainerForm, Input, Label, Logo, TextoLink, Titulo1 } from './styled';
+import { Button, ContainerForm, Input, Label, Logo, NewCadastroTitle, TextoLink, Titulo1 } from './styled';
 //import '/styled.css';
 
 function RegisterDesejo(){
     return(
         <div>
             <Cabecalho></Cabecalho>
-            <h2>    
+            <NewCadastroTitle>    
                 Cadastro de novo desejo
-                </h2>
+                </NewCadastroTitle>
+            <ContainerForm>
             <div>
                 <form action="">
                 <br />
@@ -21,7 +22,7 @@ function RegisterDesejo(){
                     <Input type="text" name="name" id="name" required="required" placeholder="Descreva seu desejo..."/>
                 </p>
                 <div>
-                    Preencha com as caractetísticas que deseja:
+                    <Label>Preencha com as caractetísticas que deseja:</Label>
                 </div>
                 <p>
                 <Label htmlFor="password">Quarto</Label>
@@ -67,6 +68,7 @@ function RegisterDesejo(){
                 </p>
             </form>
             </div>
+            </ContainerForm>
 </div>
     )
 }
