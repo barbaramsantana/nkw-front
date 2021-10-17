@@ -30,7 +30,7 @@ return(
     <Route exact path="/" component={() => <Login/>} />
     <Route path="/register" component={() => <RegisterUser/>} />
     <PrivateRoute path="/meuspedidos" component={() => <MeusPedidos/>}/>
-    <PrivateRoute path="/desejo" component={() => <Desejo/>}/>
+    <PrivateRoute path="/desejo/:id" component={() => <Desejo/>}/>
     <PrivateRoute path="/perfil" component={() => <Perfil/>}/>
     <PrivateRoute path="/perfiledite" component={() => <PerfilEdite/>}/>
     <PrivateRoute path="/meusfavoritos" component={() => <MeusFavoritos/>}/>

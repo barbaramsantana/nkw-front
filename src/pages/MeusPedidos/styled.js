@@ -2,17 +2,29 @@ import styled from "styled-components";
 
 export const ContainerForm = styled.div`
   background-color: #FFFFFF;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  border-radius: 50px 50px 0px 0px;
-  width: 850px;
-  height: 100%;
+  justify-content: left;
+  align-items: left;
+  text-align: left;
+  border-radius: 50px 50px 50px 50px;
+  width: 900px;
   margin-left: 250px;
-  margin-top: 90px;
-  padding-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
 `;
+export const ContainerDesejo = styled.div`
+  background-color: #FFFFFF;
+  justify-content: left;
+  align-items: left;
+  text-align: left;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+`;
+
 //font-family: NTR;
 export const Logo = styled.div`
 font-style: normal;
@@ -79,4 +91,19 @@ font-size: 20px;
 line-height: 30px;
 
 color: #BB6BD9;
+`;
+export const ContainerCaracteristicas = styled.div`
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+  justify-content: left;
+  align-items: left;
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top:20px;
+  padding-bottom: 20px;
+  border-radius: 50px 50px 50px 50px;
+`;
+export const ContainerText = styled.div`
+color: #8F9BB3 ;
 `;

@@ -6,12 +6,8 @@ export const ContainerForm = styled.div`
   align-items: center;
   text-align: center;
   border-radius: 50px 50px 0px 0px;
-  width: 850px;
-  height: 100%;
-  margin-left: 250px;
-  margin-top: 90px;
-  padding-bottom: 20px;
-
+  margin-left: 10rem;
+  margin-right: 10rem;
 `;
 //font-family: NTR;
 export const Logo = styled.div`
@@ -42,9 +38,6 @@ font-weight: normal;
 font-size: 30px;
 line-height: 30px;
 /* identical to box height, or 100% */
-justify-content: left;
-align-items: left;
-text-align: left;
 
 
 color: #3A3C4E;
@@ -60,7 +53,6 @@ border: 1px solid #E4E9F2;
 box-sizing: border-box;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 border-radius: 8px;
-width: 700px;
 height: 50px;
 margin-top: 20px;
 justify-content: left;
@@ -71,15 +63,13 @@ text-align: left;
 
 }
 `;
-export const Button = styled.input`
+export const Button = styled.button`
 background: #BB6BD9;
 border-radius: 8px;
 color: #FFFFFF;
-width: 302px;
-height: 50px;
 font-family: Poppins;
 font-style: normal;
-font-weight: 600;
+font-weight: 500;
 font-size: 25px;
 line-height: 30px;
 border-bottom: 0px;

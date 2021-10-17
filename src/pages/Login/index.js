@@ -52,22 +52,17 @@ class Login extends Component{
             <form onSubmit={this.handleSignIn}>
                 <Titulo1>Login</Titulo1>
                 <br />
-                <p>
+                <div className="mb-3">
                     {this.state.error && <Attention>{this.state.error}</Attention>}
-                    <Label htmlFor="email">Email</Label>
+                    <label htmlFor="email" className="form-label">Email</label>
+                    <input type="email" name="email" className="form-control" id="email" required="required" placeholder="Digite seu email..." aria-describedby="email" onChange={e => this.setState({email: e.target.value})}/>
+                </div>
+                <div className="mb-3">
+                    <label htmlFor="password" className="form-label">Senha</label>
                     <br />
-                    <Input type="email" name="email" id="email" required="required" placeholder="Digite seu email..." onChange={e => this.setState({email: e.target.value})}/>
-                </p>
-
-                <p>
-                    <Label htmlFor="password">Senha</Label>
-                    <br />
-                    <Input type="password" name="password" id="password" required="required" placeholder="Digite sua senha..." onChange={e => this.setState({password: e.target.value})}/>
-                </p>
-
-                <p>
-                    <Button type="submit" id="password" value="Entrar"/>
-                </p>
+                    <input type="password" name="password" id="password" className="form-control" required="required" placeholder="Digite sua senha..." onChange={e => this.setState({password: e.target.value})}/>
+                </div>
+                    <Button className="btn btn-primary" type="submit" id="password">Entrar</Button>
 
                 <p>
                     <Link className="link-register" to="/register" >
