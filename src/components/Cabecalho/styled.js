@@ -28,7 +28,6 @@ color: #BB6BD9;
 text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 `;
 export const Subtitulo = styled.div`
-
 `;
 
 export const Titulo1 = styled.div`
