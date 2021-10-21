@@ -1,3 +1,6 @@
+body{
+    background: #F4F4F4;
+}
 .icone-perfil{
     color: #BB6BD9;
     justify-content: center;
@@ -27,7 +30,7 @@ color: #3A3C4E;
     justify-content: left;
     align-items: left;
     text-align: left;
-    margin-top: -25px;
+    margin-top: 1rem;
 }
 @media only screen and (max-device-width:900px){
     .logonkw{    width: 1000px;
@@ -38,118 +41,7 @@ color: #3A3C4E;
         margin-top: -20px;
     }
     .containerHeader{
-        background-color: #FFFFFF;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    }
-    .icone-perfil{
-        width: 45px;
-        height: 45px;
-        color: #BB6BD9;
-        justify-content: center;
-    align-items: center;
-    text-align: center;
-    }
-    .name-menu{
-        font-family: 'Poppins', sans-serif;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 25px;
-        line-height: 30px;
-        justify-content: right;
-        align-items: center;
-        text-align: right;
-        margin-right: 10px;
-        /* identical to box height, or 120% */
-        
-        
-        color: #3A3C4E;
-        }
-}
-@media only screen and (max-device-width:700px){
-    .logonkw{   width: 1000px;
-        height: 100px;
-        justify-content: left;
-        align-items: left;
-        text-align: left;
-    }
-    .containerHeader{
-        background-color: #FFFFFF;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    }
-    .icone-perfil{
-        width: 45px;
-        height: 45px;
-        color: #BB6BD9;
-        justify-content: center;
-    align-items: center;
-    text-align: center;
-    }
-    .name-menu{
-        font-family: 'Poppins', sans-serif;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 25px;
-        line-height: 30px;
-        justify-content: right;
-        align-items: center;
-        text-align: right;
-        margin-right: 10px;
-        /* identical to box height, or 120% */
-        
-        
-        color: #3A3C4E;
-        }
-}
-@media only screen and (max-device-width:500px){
-    .logonkw{   width: 1000px;
-        height: 100px;
-        justify-content: left;
-        align-items: left;
-        text-align: left;
-    }
-    .containerHeader{
-        background-color: #FFFFFF;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    }
-    .icone-perfil{
-        width: 45px;
-        height: 45px;
-        color: #BB6BD9;
-        justify-content: center;
-    align-items: center;
-    text-align: center;
-    }
-    .name-menu{
-        font-family: 'Poppins', sans-serif;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 25px;
-        line-height: 30px;
-        justify-content: right;
-        align-items: center;
-        text-align: right;
-        margin-right: 10px;
-        /* identical to box height, or 120% */
-        
-        
-        color: #3A3C4E;
-        }
-}
-@media only screen and (max-device-width:320px){
-    .logonkw{   width: 1000px;
-        height: 100px;
-        justify-content: left;
-        align-items: left;
-        text-align: left;
-    }
-    .containerHeader{
-        background-color: #FFFFFF;
+    background: #FFFFFF;
     justify-content: center;
     align-items: center;
     text-align: center;

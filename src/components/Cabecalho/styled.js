@@ -54,6 +54,14 @@ justify-content: left;
 color: #3A3C4E;
 `;
 
+export const MenuContainer = styled.div`
+align-items: right;
+  text-align: right;
+  text-decoration: none;
+  color: #8F9BB3;
+  font-size: 25px;
+`;
+
 export const Input = styled.input`
 background: #F4F4FC;
 border: 1px solid #E4E9F2;

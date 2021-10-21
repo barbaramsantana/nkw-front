@@ -1,6 +1,7 @@
 import React from 'react';
 import { Component } from 'react';
 import {Link, withRouter} from "react-router-dom";
+import { getToken } from '../../Auth';
 import Cabecalho from '../../components/Cabecalho';
 import Lista from '../../components/Lista';
 import api from '../../services/api';
@@ -23,7 +24,7 @@ class RegisterDesejo extends Component{
       };
       handleSignUp = async e => {
         e.preventDefault();
-        //const token = getToken();
+        const token = getToken();
         const { descricao, quarto, suite, cozinha, localidade, area, vagaGaragem, valor, taxaCond, favorito} = this.state;
         if (!descricao || !quarto || !suite || !cozinha || !localidade || !area || !vagaGaragem || !valor || !taxaCond) {
           this.setState({ error: "Preencha todos os dados para se cadastrar" });
@@ -41,7 +42,7 @@ class RegisterDesejo extends Component{
                 "taxaCond": taxaCond,
                 "favorito": favorito
             }
-            await api.post("/desejos", data);
+            await api.post("/desejos", data, {headers:{token:`Bearer ${token}`}});
             this.props.history.push("/meuspedidos");
           } catch (err) {
             console.log(err);

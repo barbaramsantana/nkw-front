@@ -25,14 +25,15 @@ class Login extends Component{
               "email": email,
               "password": password
             }
-            const response = await api.post("/auth/authenticate", datas);
+            const response = await api.post("/auth/authenticate", {email, password});
             
             console.log(response);
             
-            //login(response.data.token);
-            //nameuser(response.data.user.name);
-            //emailuser(response.data.user.email);
-            //iduser(response.data.user._id);
+            login(response.data.token);
+            nameuser(response.data.user.name);
+            emailuser(response.data.user.email);
+            iduser(response.data.user._id);
+            //console.log(getToken());
             
     
             this.props.history.push("/meuspedidos");

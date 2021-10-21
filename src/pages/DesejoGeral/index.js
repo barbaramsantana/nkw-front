@@ -12,9 +12,10 @@ import {ContainerForm, Titulo1, Label, ContainerCaracteristicas, TextoLink, Text
 //pegar id da url
 //
 
-function Desejo(){
+function DesejoGeral(){
     const {id} = useParams();
     const [items, setItems] = useState([]);
+    const [user, setUser] = useState([]);
     console.log(id);
 
     useEffect(()=>{
@@ -23,6 +24,7 @@ function Desejo(){
           const response = await api.get(`/desejos/${id}`, {headers:{token:`Bearer ${token}`}});
     
           setItems(response.data.desejo);
+          setUser(response.data.desejo.user);
           console.log(response);
         }
         loadDesejo();
@@ -42,7 +44,13 @@ function Desejo(){
                 <div>
                 <p>
                 <TextoDescricao>
-                {items.descricao}
+                    <h3>
+                    Desejado por: {user.name}
+                    </h3>
+                    <h4>
+                    Contato: {user.email}
+                    </h4>
+                    {items.descricao}
                 </TextoDescricao>          
                 </p>
                <TextoLink>
@@ -108,4 +116,4 @@ function Desejo(){
             </ContainerForm>
 </div>
     )}
-export default Desejo;
+export default DesejoGeral;
