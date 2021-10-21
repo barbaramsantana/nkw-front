@@ -8,6 +8,7 @@ import { BrowserRouter } from 'react-router-dom';
 import RegisterUser from './pages/RegisterUser';
 import Routes from './Routes/routes';
 import MeusPedidos from './pages/MeusPedidos';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(
   <React.StrictMode>

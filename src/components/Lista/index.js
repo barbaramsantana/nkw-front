@@ -3,7 +3,8 @@ import {Link, withRouter} from "react-router-dom";
 //import { Button, ContainerForm, Input, Label, Logo, TextoLink, Titulo1 } from './styled';
 //import '/styleed.css';
 
-function Lista(){
+function Lista(desejos){
+    console.log(desejos);
     return(
         <div>
             <Link className="link-desejo" to="/desejo">
@@ -11,9 +12,9 @@ function Lista(){
                     <img src="" alt="" />
                     Bárbara M. S.
                 </div>
-                <div>Apartamento em Aracaju</div>
+                <div>Id: {desejos._id}</div>
                 <div>
-                    like comentario apagar ver
+                    like apagar
                 </div>
             </Link>
         </div>
