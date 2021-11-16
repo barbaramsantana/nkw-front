@@ -85,6 +85,26 @@ line-height: 30px;
 
 color: #8F9BB3;
 `;
+export const TextoLinkVenda = styled.h2`
+background: #BB6BD9;
+border-radius: 8px;
+color: #FFFFFF;
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 25px;
+line-height: 30px;
+border-bottom: 0px;
+border:none;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+textDecoration: none;
+
+&:hover{
+  background-color: #8F9BB3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  textDecoration: none;
+}
+`;
 export const TextoDescricao = styled.h2`
 font-family: Poppins;
 font-style: normal;
@@ -97,7 +117,5 @@ color: #BB6BD9;
 `;
 
 export const ContainerCaracteristicas = styled.div`
-display: grid;
-grid-template-columns: repeat(3, 1fr);
 `;
 

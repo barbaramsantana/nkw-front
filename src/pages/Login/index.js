@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {Link, withRouter} from "react-router-dom";
-import { Attention, Button, ContainerForm, Input, Label, Logo, TextoLink, Titulo1 } from './styled';
+import { Attention, Button, ContainerForm, ContainerInput, Input, Label, Logo, TextoLink, Titulo1 } from './styled';
 import './styled.css';
 import api from '../../services/api';
 import nkw from  '../../img/NKW.svg';
@@ -49,19 +49,24 @@ class Login extends Component{
     render(){
     return(
         <ContainerForm>
-            <img src={nkw} alt="nkw" className="image-logo"/>
+            {//<img src={nkw} alt="nkw" className="image-logo"/>
+    }
             <form onSubmit={this.handleSignIn}>
                 <Titulo1>Login</Titulo1>
                 <br />
                 <div className="mb-3">
                     {this.state.error && <Attention>{this.state.error}</Attention>}
                     <label htmlFor="email" className="form-label">Email</label>
-                    <input type="email" name="email" className="form-control" id="email" required="required" placeholder="Digite seu email..." aria-describedby="email" onChange={e => this.setState({email: e.target.value})}/>
+                    <ContainerInput>
+                    <Input type="email" name="email" className="form-control" id="email" required="required" placeholder="Digite seu email..." aria-describedby="email" onChange={e => this.setState({email: e.target.value})}/>
+                    </ContainerInput>
                 </div>
                 <div className="mb-3">
                     <label htmlFor="password" className="form-label">Senha</label>
                     <br />
-                    <input type="password" name="password" id="password" className="form-control" required="required" placeholder="Digite sua senha..." onChange={e => this.setState({password: e.target.value})}/>
+                    <ContainerInput>
+                    <Input type="password" name="password" id="password" className="form-control" required="required" placeholder="Digite sua senha..." onChange={e => this.setState({password: e.target.value})}/>
+                    </ContainerInput>
                 </div>
                     <Button className="btn btn-primary" type="submit" id="password">Entrar</Button>
 

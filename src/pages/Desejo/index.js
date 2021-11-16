@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {Link, withRouter, useParams} from "react-router-dom";
 import { getToken } from '../../Auth';
 import  Cabecalho  from '../../components/Cabecalho';
+import Navbar from '../../components/Navbar';
 //import Lista from '../../components/Lista';
 //import { BiHeart, BiTrash } from "react-icons/bi";
 import api from '../../services/api';
@@ -34,70 +35,88 @@ function Desejo(){
     }*/
     return(
         <div>
-            <Cabecalho></Cabecalho>
+           { //<Cabecalho></Cabecalho>
+           <Navbar></Navbar>
+           }
+           <br />
             <div>
-                <Titulo1>Desejo</Titulo1>
+                <Titulo1>Meu Desejo</Titulo1>
+                <br />
             </div>
             <ContainerForm> 
                 <div>
                 <p>
-                <TextoDescricao>
-                {items.descricao}
+                <TextoDescricao className="textdescription">
+                {items.descricao
+                }
                 </TextoDescricao>          
                 </p>
                <TextoLink>
                 <div>
                     Características
+                
                </div>
-               <div className="row d-flex align-items-center">
-                    <ContainerCaracteristicas className="mb-5 col-6 col-lg-12 com-md-12">
-                        <div className="row align-items-center">
-                            <TextoLink className="form-floating mb-5 col-6 col-lg-4 align-items-center">
-                                Area: 
+               <div className="row d-flex text-center">
+                    <ContainerCaracteristicas className="mb-5 col-6 col-lg-12 com-md-12 text-center">
+                        <div className="row text-center">
+                            <TextoLink className="form-floating mb-5 col-6 col-lg-4 text-center">
+                                Area:
+                                
                                 <Label>
-                                    {items.area} 
+                                    {items.area
+                                    } 
                                 </Label>
                             </TextoLink>
-                        <TextoLink className="form-floating mb-5 col-6 col-lg-4 align-items-center">
-                            Cozinha: 
+                        <TextoLink className="form-floating mb-5 col-6 col-lg-4 text-center">
+                            Cozinha:
+                            
                             <Label>
                                 {items.cozinha} 
                             </Label>
                         </TextoLink>
-                        <TextoLink className="form-floating mb-3 col-6 col-lg-4 align-items-center">
-                            Localidade: 
+                        <TextoLink className="form-floating mb-3 col-6 col-lg-4 text-center">
+                           Localidade: 
+                           
                             <Label>
-                                {items.localidade} 
+                                {items.localidade
+                                } 
                             </Label>
                         </TextoLink>
-                        <TextoLink className="form-floating mb-3 col-6 col-lg-4 align-items-center">
-                            Quarto: 
+                        <TextoLink className="form-floating mb-3 col-6 col-lg-4 text-center">
+                           Quarto: 
+                           
                             <Label>
-                                {items.quarto} 
+                                {items.quarto
+                                } 
                             </Label>
                         </TextoLink>
-                        <TextoLink className="form-floating mb-3 col-6 col-lg-4 align-items-center">
-                            Suite: 
+                        <TextoLink className="form-floating mb-3 col-6 col-lg-4 text-center">
+                            Suite:
+                            
                             <Label>
                                 {items.suite} 
                             </Label> 
                         </TextoLink>
-                        <TextoLink className="form-floating mb-3 col-6 col-lg-4 align-items-center">
+                        <TextoLink className="form-floating mb-3 col-6 col-lg-4 text-center">
                             Taxa Condominio: 
+                            
                             <Label>
-                                {items.taxaCond} 
+                                {items.taxaCond
+                                } 
                             </Label>
                         </TextoLink>
-                        <TextoLink className="form-floating mb-3 col-6 col-lg-4 align-items-center">
+                        <TextoLink className="form-floating mb-3 col-6 col-lg-4 text-center">
                             Vaga de Garagem: 
+                            
                             <Label>
                                 {items.vagaGaragem} 
                             </Label>
                         </TextoLink>
-                        <TextoLink className="form-floating mb-3 col-6 col-lg-4 align-items-center">
-                            Valor: 
+                        <TextoLink className="form-floating mb-3 col-6 col-lg-4 text-center">
+                            Valor:
+                            
                             <Label>
-                                {items.valor} 
+                                {items.valor}
                             </Label>
                         </TextoLink>
                     </div>

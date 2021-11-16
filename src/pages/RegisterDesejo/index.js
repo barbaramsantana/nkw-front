@@ -4,6 +4,7 @@ import {Link, withRouter} from "react-router-dom";
 import { getToken } from '../../Auth';
 import Cabecalho from '../../components/Cabecalho';
 import Lista from '../../components/Lista';
+import Navbar from '../../components/Navbar';
 import api from '../../services/api';
 import { Button, ContainerCaracteristicas, ContainerForm, Input, InputDescription, Label, Logo, NewCadastroTitle, TextoLink, Titulo1 } from './styled';
 //import '/styled.css';
@@ -53,16 +54,18 @@ class RegisterDesejo extends Component{
     render(){
     return(
         <div>
-                <Cabecalho></Cabecalho>
+                <Navbar></Navbar>
             <NewCadastroTitle>    
+                <br />
                 Cadastro de novo desejo
                 </NewCadastroTitle>
+                <br />
             <ContainerForm>
             <div>
                 <form onSubmit={this.handleSignUp}>
                 <br />
                 <p>
-                    <Label htmlFor="name">Descrição do  desejo</Label>
+                    <Label htmlFor="name">Descrição do  desejo*</Label>
                     <br />
                     <InputDescription type="text" name="name" id="name" required="required" placeholder="Descreva seu desejo..." onChange={e => this.setState({descricao: e.target.value})}/>
                 </p>
@@ -75,42 +78,42 @@ class RegisterDesejo extends Component{
 
                 <div className="form-floating mb-3 col-3">
                     <Input type="number" className="form-control" min="0" name="quarto" id="quarto" required="required" placeholder="Numero de quartos..." onChange={e => this.setState({quarto: e.target.value})}/>
-                    <Label htmlFor="quarto">Quarto</Label>
+                    <Label htmlFor="quarto">Quarto*</Label>
                 </div>
 
                 <div className="form-floating mb-3 col-3">
                     <Input className="form-control" type="number" min="0" name="suite" id="suite" required="required" placeholder="Numero de suites..." onChange={e => this.setState({suite: e.target.value})}/>
-                    <Label htmlFor="suite">Suite</Label>
+                    <Label htmlFor="suite">Suite*</Label>
                 </div>
 
                 <div className="form-floating mb-3 col-3">
                     <Input className="form-control" type="number" name="value" id="value" required="required" placeholder="R$" onChange={e => this.setState({valor: e.target.value})}/>
-                    <Label htmlFor="email">Valor</Label>
+                    <Label htmlFor="email">Valor*</Label>
                 </div>
 
                 <div className="form-floating mb-3 col-3">
                     <Input className="form-control" type="number" min="0" name="cozinha" id="cozinha" required="required" placeholder="Numero de cozinhas..." onChange={e => this.setState({cozinha: e.target.value})}/>
-                    <Label htmlFor="cozinha">Cozinha</Label>
+                    <Label htmlFor="cozinha">Cozinha*</Label>
                 </div>
 
                 <div className="form-floating mb-3 col-6">
                     <Input className="form-control" type="text" name="text" id="text" required="required" placeholder="Bairro, cidade..." onChange={e => this.setState({localidade: e.target.value})}/>
-                    <Label htmlFor="local">Local</Label>
+                    <Label htmlFor="local">Local*</Label>
                 </div>
 
                 <div className="form-floating mb-3 col-3">
                     <Input className="form-control" type="number" min="0" name="area" id="area" required="required" placeholder="Valor da área..." onChange={e => this.setState({area: e.target.value})}/>
-                    <Label htmlFor="area">Área</Label>
+                    <Label htmlFor="area">Área*</Label>
                 </div>
 
                 <div className="form-floating mb-3 col-3">
                     <Input className="form-control" type="number" min="0" name="garagem" id="garagem" required="required" placeholder="Número de vagas de garagem..." onChange={e => this.setState({vagaGaragem: e.target.value})}/>
-                    <Label htmlFor="area">Vaga de Garegem</Label>
+                    <Label htmlFor="area">Vaga de Garegem*</Label>
                 </div>
 
                 <div className="form-floating mb-3 col-3">
                     <Input className="form-control" type="number" name="condominio" id="condominio" required="required" placeholder="Valor da taxa de condomínio..." onChange={e => this.setState({taxaCond: e.target.value})}/>
-                    <Label htmlFor="area">Taxa de Condomínio</Label>
+                    <Label htmlFor="area">Taxa de Condomínio*</Label>
                 </div>
                 </div>
                 </ContainerCaracteristicas>

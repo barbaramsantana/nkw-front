@@ -27,17 +27,17 @@ color: #3A3C4E;
     grid-template-columns: 1fr 1fr;
 }
 .logonkw{   
-    justify-content: left;
-    align-items: left;
-    text-align: left;
+    justify-content: right;
+    align-items: right;
+    text-align: right;
     margin-top: 1rem;
 }
 @media only screen and (max-device-width:900px){
     .logonkw{    width: 1000px;
         height: 100px;
-        justify-content: left;
-        align-items: left;
-        text-align: left;
+        justify-content: right;
+        align-items: right;
+        text-align: right;
         margin-top: -20px;
     }
     .containerHeader{
@@ -70,3 +70,13 @@ color: #3A3C4E;
         color: #3A3C4E;
         }
 }
+
+.modal {
+    width: 300px;
+  }
+  .modal-content {
+    width: 300px;
+  }
+  .list-group-item:hover {
+    background-color: rgba(59, 57, 57, 0.164) !important;
+  }

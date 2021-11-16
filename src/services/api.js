@@ -4,8 +4,8 @@ import { getToken } from '../Auth/index';
 
 const api = axios.create({
   //baseURL:
-  //baseURL: "https://nkwbackend.herokuapp.com"  
-  baseURL: process.env.REACT_APP_API_URL
+  baseURL: "https://nkwbackend.herokuapp.com"  
+  //baseURL: process.env.REACT_APP_API_URL
     //baseURL: "http://localhost:9000"
 });
 

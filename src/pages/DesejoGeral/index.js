@@ -2,11 +2,12 @@ import React, {useEffect, useState} from 'react';
 import {Link, withRouter, useParams} from "react-router-dom";
 import { getToken } from '../../Auth';
 import  Cabecalho  from '../../components/Cabecalho';
+import Navbar from '../../components/Navbar';
 //import Lista from '../../components/Lista';
 //import { BiHeart, BiTrash } from "react-icons/bi";
 import api from '../../services/api';
 
-import {ContainerForm, Titulo1, Label, ContainerCaracteristicas, TextoLink, TextoDescricao } from './styled';
+import {ContainerForm, Titulo1, Label, ContainerCaracteristicas, TextoLink, TextoDescricao, TextoLinkVenda } from './styled';
 //import '/styled.css';
 
 //pegar id da url
@@ -36,10 +37,12 @@ function DesejoGeral(){
     }*/
     return(
         <div>
-            <Cabecalho></Cabecalho>
+           <Navbar></Navbar>
+           <br />
             <div>
                 <Titulo1>Desejo</Titulo1>
             </div>
+            <br />
             <ContainerForm> 
                 <div>
                 <p>
@@ -47,9 +50,10 @@ function DesejoGeral(){
                     <h3>
                     Desejado por: {user.name}
                     </h3>
-                    <h4>
-                    Contato: {user.email}
-                    </h4>
+                    <TextoLinkVenda className="align-items-center btn btn-primary">
+                    <Link style={{ textDecoration: 'none', color: "white"}} className="link-desejo" to={`/desejodevenda/${id}`}>Realize o desejo!</Link> 
+                    </TextoLinkVenda>
+                    <br />
                     {items.descricao}
                 </TextoDescricao>          
                 </p>

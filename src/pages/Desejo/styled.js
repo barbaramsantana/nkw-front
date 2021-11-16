@@ -97,7 +97,5 @@ color: #BB6BD9;
 `;
 
 export const ContainerCaracteristicas = styled.div`
-display: grid;
-grid-template-columns: repeat(3, 1fr);
 `;
 

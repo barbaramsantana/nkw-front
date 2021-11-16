@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link, withRouter } from 'react-router-dom';
-import { Button, ContainerForm, Input, Label, Logo, TextoLink, Titulo1 } from './styled';
+import { Button, ContainerForm, ContainerInput, Input, Label, Logo, TextoLink, Titulo1 } from './styled';
 //import '/styled.css';
 import api from '../../services/api';
 import nkw from  '../../img/NKW.svg';
@@ -40,27 +40,31 @@ class RegisterUser extends Component{
             <form onSubmit={this.handleSignUp}>
                 <Titulo1>Cadastre-se</Titulo1>
                 <br />
-                <p>
-                    <Label htmlFor="name">Nome</Label>
+                <div className="mb-3">
+                    <label htmlFor="name" className="form-label">Nome</label>
                     {this.state.error && <p>{this.state.error}</p>}
                     <br />
-                    <Input type="text" name="name" id="name" required="required" placeholder="Digite seu nome..." onChange={e => this.setState({name: e.target.value})}/>
-                </p>
-                <p>
-                    <Label htmlFor="email">Email</Label>
+                    <ContainerInput>
+                    <Input className="form-control" type="text" name="name" id="name" required="required" placeholder="Digite seu nome..." onChange={e => this.setState({name: e.target.value})}/>
+                    </ContainerInput>
+                </div>
+                <div className="mb-3">
+                    <label htmlFor="email" className="form-label" >Email</label>
                     <br />
-                    <Input type="email" name="email" id="email" required="required" placeholder="Digite seu email..." onChange={e => this.setState({email: e.target.value})}/>
-                </p>
+                    <ContainerInput>
+                    <Input className="form-control" type="email" name="email" id="email" required="required" placeholder="Digite seu email..." onChange={e => this.setState({email: e.target.value})}/>
+                    </ContainerInput>
+                </div>
 
-                <p>
-                    <Label htmlFor="password">Senha</Label>
+                <div className="mb-3">
+                    <label htmlFor="password">Senha</label>
                     <br />
-                    <Input type="password" name="password" id="password" required="required" placeholder="Digite sua senha..." onChange={e => this.setState({password: e.target.value})}/>
-                </p>
+                    <ContainerInput>
+                    <Input className="form-control" type="password" name="password" id="password" required="required" placeholder="Digite sua senha..." onChange={e => this.setState({password: e.target.value})}/>
+                    </ContainerInput>
+                </div>
 
-                <p>
-                    <Button type="submit" id="password" value="Cadastrar"/>
-                </p>
+                    <Button className="btn btn-primary" type="submit" id="password">Cadastrar</Button>
 
                 <p>
                     <Link className="link-login" to="/">

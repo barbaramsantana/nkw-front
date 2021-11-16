@@ -10,6 +10,7 @@ import api from '../../services/api';
 import { getToken } from '../../Auth/index';
 import { getName } from '../../Auth/index';
 import axios from 'axios';
+import Navbar from '../../components/Navbar';
 
 function TodosDesejos(){
     const [items, setItems] = useState([]);
@@ -32,10 +33,12 @@ function TodosDesejos(){
     },[]);
     return(
         <div>
-            {<Cabecalho></Cabecalho>
-            }
+            {//<Cabecalho></Cabecalho>
+            }<Navbar></Navbar>
+            <br />
             <div className="meus-desejos">
                 <Titulo1>Meus Desejos</Titulo1>
+                <br />
                 <div className="group-my-desejos">
                     <Link className="link-entrar" to="/registerdesejos" style={{ textDecoration: 'none' }}>
                         <h2 className="new-desejo"><AiFillPlusCircle className="add-circle"/> Novo Desejo</h2>

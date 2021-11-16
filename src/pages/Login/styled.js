@@ -8,6 +8,8 @@ export const ContainerForm = styled.div`
   border-radius: 50px 50px 0px 0px;
   margin-left: 10rem;
   margin-right: 10rem;
+  padding-top: 10rem;
+  margin-botton: 100%;
 `;
 //font-family: NTR;
 export const Logo = styled.div`
@@ -53,15 +55,14 @@ border: 1px solid #E4E9F2;
 box-sizing: border-box;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 border-radius: 8px;
-height: 50px;
-margin-top: 20px;
-justify-content: left;
-align-items: left;
-text-align: left;
 ::placeholder{
   color: #8F9BB3;
 
 }
+`;
+export const ContainerInput = styled.div`
+margin-left: 5rem;
+margin-right: 5rem;
 `;
 export const Button = styled.button`
 background: #BB6BD9;

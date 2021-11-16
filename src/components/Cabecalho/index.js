@@ -11,6 +11,43 @@ import { getName } from '../../Auth';
 function Cabecalho(){
     const name = getName();
     return(
+<div>
+<nav class="navbar navbar-light bg-light shadow">
+  <div class="container-fluid">
+    <span class="navbar-brand mb-0 h1">Menu App</span>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</nav>
+
+<div class="modal true" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">MENU</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">HOME</li>
+          <li class="list-group-item">DOCUMENTOS</li>
+          <li class="list-group-item">APLICATIVO</li>
+          <li class="list-group-item">CONTATOS</li>
+          <li class="list-group-item">SOBRE</li>
+        </ul>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+                {/*
         <ContainerHeader>
             <header className="titulo">
             <img className="logonkw" src={logonkw} alt="logonkw" />
@@ -23,7 +60,6 @@ function Cabecalho(){
                     <Menu/>
                 </MenuContainer>
             </div>
-            {
             /*
             <nav class="navbar navbar-light bg-light fixed-top">
             <div class="container-fluid">
@@ -55,10 +91,11 @@ function Cabecalho(){
                 </div>
             </div>
             </nav>
-            */}
-
+            
             </header>
             </ContainerHeader>
+        */}
+</div>
     )
 }
 export default Cabecalho;

@@ -6,6 +6,7 @@ import Lista from '../../components/Lista';
 import { BiUserCircle } from 'react-icons/bi';
 
 import {ContainerForm} from './styled';
+import Navbar from '../../components/Navbar';
 //import '/styled.css';
 
 function Perfil(){
@@ -13,7 +14,8 @@ function Perfil(){
     const email = getEmail();
     return(
         <div>
-            <Cabecalho></Cabecalho>
+           <Navbar></Navbar>
+           <br />
            {/*<Link className="link-desejo" to="/perfiledite">
             <h2>    
                 Editar Perfil
