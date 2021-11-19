@@ -83,7 +83,7 @@ class RegisterDesejo extends Component{
 
                 <div className="form-floating mb-3 col-3">
                     <Input className="form-control" type="number" min="0" name="suite" id="suite" required="required" placeholder="Numero de suites..." onChange={e => this.setState({suite: e.target.value})}/>
-                    <Label htmlFor="suite">Suite*</Label>
+                    <Label htmlFor="suite">Suíte*</Label>
                 </div>
 
                 <div className="form-floating mb-3 col-3">
@@ -108,12 +108,12 @@ class RegisterDesejo extends Component{
 
                 <div className="form-floating mb-3 col-3">
                     <Input className="form-control" type="number" min="0" name="garagem" id="garagem" required="required" placeholder="Número de vagas de garagem..." onChange={e => this.setState({vagaGaragem: e.target.value})}/>
-                    <Label htmlFor="area">Vaga de Garegem*</Label>
+                    <Label htmlFor="area">Vaga de garagem*</Label>
                 </div>
 
                 <div className="form-floating mb-3 col-3">
                     <Input className="form-control" type="number" name="condominio" id="condominio" required="required" placeholder="Valor da taxa de condomínio..." onChange={e => this.setState({taxaCond: e.target.value})}/>
-                    <Label htmlFor="area">Taxa de Condomínio*</Label>
+                    <Label htmlFor="area">Taxa de condomínio*</Label>
                 </div>
                 </div>
                 </ContainerCaracteristicas>

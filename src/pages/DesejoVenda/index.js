@@ -47,7 +47,7 @@ function DesejoVenda(){
             <ContainerForm> 
                 <TextoMensagemForm action="https://api.staticforms.xyz/submit" method="POST">
                 <input type="hidden" name="accessKey" value="2a247bc9-4739-41c0-b273-f60877fc8a65"/>
-                <input type="hidden" name="redirectTo" value={`http://localhost:3000/desejodevenda/${id}`}/>
+                <input type="hidden" name="redirectTo" value={`http://nkw-front.herokuapp.com/desejodevenda/${id}`}/>
                 <div class="mb-3 row">
                     <label for="staticEmail" class="col-sm-2 col-form-label">Olá</label>
                     <div class="col-sm-10">

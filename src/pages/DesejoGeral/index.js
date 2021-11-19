@@ -65,7 +65,7 @@ function DesejoGeral(){
                     <ContainerCaracteristicas className="mb-5 col-6 col-lg-12 com-md-12">
                         <div className="row align-items-center">
                             <TextoLink className="form-floating mb-5 col-6 col-lg-4 align-items-center">
-                                Area: 
+                                Área: 
                                 <Label>
                                     {items.area} 
                                 </Label>
@@ -89,19 +89,19 @@ function DesejoGeral(){
                             </Label>
                         </TextoLink>
                         <TextoLink className="form-floating mb-3 col-6 col-lg-4 align-items-center">
-                            Suite: 
+                            Suíte: 
                             <Label>
                                 {items.suite} 
                             </Label> 
                         </TextoLink>
                         <TextoLink className="form-floating mb-3 col-6 col-lg-4 align-items-center">
-                            Taxa Condominio: 
+                            Taxa de condomínio: 
                             <Label>
                                 {items.taxaCond} 
                             </Label>
                         </TextoLink>
                         <TextoLink className="form-floating mb-3 col-6 col-lg-4 align-items-center">
-                            Vaga de Garagem: 
+                            Vaga de garagem: 
                             <Label>
                                 {items.vagaGaragem} 
                             </Label>

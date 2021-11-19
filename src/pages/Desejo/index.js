@@ -60,7 +60,7 @@ function Desejo(){
                     <ContainerCaracteristicas className="mb-5 col-6 col-lg-12 com-md-12 text-center">
                         <div className="row text-center">
                             <TextoLink className="form-floating mb-5 col-6 col-lg-4 text-center">
-                                Area:
+                                Área:
                                 
                                 <Label>
                                     {items.area
@@ -91,14 +91,14 @@ function Desejo(){
                             </Label>
                         </TextoLink>
                         <TextoLink className="form-floating mb-3 col-6 col-lg-4 text-center">
-                            Suite:
+                            Suíte:
                             
                             <Label>
                                 {items.suite} 
                             </Label> 
                         </TextoLink>
                         <TextoLink className="form-floating mb-3 col-6 col-lg-4 text-center">
-                            Taxa Condominio: 
+                            Taxa de condomínio: 
                             
                             <Label>
                                 {items.taxaCond
@@ -106,7 +106,7 @@ function Desejo(){
                             </Label>
                         </TextoLink>
                         <TextoLink className="form-floating mb-3 col-6 col-lg-4 text-center">
-                            Vaga de Garagem: 
+                            Vaga de garagem: 
                             
                             <Label>
                                 {items.vagaGaragem} 
