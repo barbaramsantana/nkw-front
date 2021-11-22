@@ -2,7 +2,7 @@
     background-color: #fff;
     height: 16vh;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
   }
   .ali{
     font-size: 15px;
