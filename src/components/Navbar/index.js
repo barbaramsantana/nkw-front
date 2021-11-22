@@ -19,9 +19,9 @@ function Navbar() {
     <>
       <IconContext.Provider value={{ color: '#FFFFFF' }}>
         <div className='navbar'>
+          <img className="logonkw" src={logonkw} alt="logo nkw" className="img-fluid figure-img" width="100px" />
           <Link style={{textDecoration: 'none', color: '#8F9BB3'}} to='#' className='menu-bars'>
           <div onClick={showSidebar}>
-          <img className="logonkw" src={logonkw} alt="logo nkw" className="img-fluid figure-img" width="100px" />
           <img className="icone-perfil" src={usercircle} alt="icone-perfil" />
           <div className='ali'>
           Olá, {name}! 
