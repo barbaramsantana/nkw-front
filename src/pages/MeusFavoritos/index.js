@@ -78,9 +78,7 @@ function MeusPedidos(){
                 <Titulo1>Meus Desejos Favoritos</Titulo1>
                 <br />
                 <div className="group-my-desejos">
-                    <Link className="link-entrar" to="/registerdesejos" style={{ textDecoration: 'none' }}>
-                        <h2 className="new-desejo"><AiFillPlusCircle className="add-circle"/> Novo Desejo</h2>
-                    </Link>
+                   
                 </div>
             </div>
             {//<Lista desejos={items}></Lista>

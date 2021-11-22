@@ -4,6 +4,7 @@ import { Button, ContainerForm, ContainerInput, Input, Label, Logo, TextoLink, T
 //import '/styled.css';
 import api from '../../services/api';
 import nkw from  '../../img/NKW.svg';
+import logo from '../../img/logo.png';
 
 class RegisterUser extends Component{
     state ={
@@ -36,7 +37,7 @@ class RegisterUser extends Component{
     render(){
     return(
         <ContainerForm>
-            <img src={nkw} alt="nkw" className="image-logo"/>
+            <img src={logo} alt="logo nkw" className="img-fluid figure-img" width="250px"/>
             <form onSubmit={this.handleSignUp}>
                 <Titulo1>Cadastre-se</Titulo1>
                 <br />

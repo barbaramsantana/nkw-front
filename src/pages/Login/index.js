@@ -4,6 +4,7 @@ import { Attention, Button, ContainerForm, ContainerInput, Input, Label, Logo, T
 import './styled.css';
 import api from '../../services/api';
 import nkw from  '../../img/NKW.svg';
+import logo from '../../img/logo.png';
 
 import {emailuser, login, nameuser, iduser} from "../../Auth/index";
 
@@ -50,7 +51,7 @@ class Login extends Component{
     return(
         <ContainerForm>
             {//<img src={nkw} alt="nkw" className="image-logo"/>
-    }
+    } <img src={logo} alt="logo nkw" className="img-fluid figure-img" width="250px"/>
             <form onSubmit={this.handleSignIn}>
                 <Titulo1>Login</Titulo1>
                 <br />
