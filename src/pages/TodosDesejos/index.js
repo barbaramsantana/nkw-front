@@ -19,12 +19,12 @@ function TodosDesejos(){
         async function loadListDesejos() {
             try{
                 const token = getToken();
-                console.log(token);
+                //console.log(token);
                 const response = await api.get('/desejos/todosdesejos',{headers:{token:`Bearer ${token}`}});
                 //const response = await api.get('/desejos');
         
                 setItems(response.data.desejos);
-                console.log(response);
+                //console.log(response);
             } catch(err){
                 console.error(err);
             }
@@ -37,7 +37,7 @@ function TodosDesejos(){
             }<Navbar></Navbar>
             <br />
             <div className="meus-desejos">
-                <Titulo1>Meus Desejos</Titulo1>
+                <Titulo1>Todos Desejos</Titulo1>
                 <br />
                 {
                     /*    <div className="group-my-desejos">
@@ -54,7 +54,7 @@ function TodosDesejos(){
                 <div className="row">
                 {Object.keys(items).map( item => (
                     //<ContainerDesejo>
-                    <ContainerDesejo className="col-6 col-lg-4 com-md-6">
+                    <ContainerDesejo className="col-10 col-lg-4 com-md-6">
                         <div className="col">
 
 

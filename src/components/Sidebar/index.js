@@ -14,25 +14,31 @@ export const Sidebar = [
     {
     title:'Meus Desejos',
     path:"/meuspedidos",
-    icon:<IoIcons.IoIosPaper />,
+    icon:<AiIcons.AiOutlineTag />,
     cName: 'nav-text'
     },
     {
     title:'Todos Desejos',
     path:"/todosdesejos",
-    icon:<FaIcons.FaCartPlus />,
+    icon:<AiIcons.AiOutlineTags />,
     cName:'nav-text'
-    },
-    {
-        title:'Meus Favoritos',
-        path:"/meusfavoritos",
-        icon:<FaIcons.FaCartPlus />,
-        cName:'nav-text'
     },
     {
         title:'Novo Desejo',
         path:"/registerdesejos",
-        icon:<FaIcons.FaCartPlus />,
+        icon:<AiIcons.AiOutlinePlusCircle />,
+        cName:'nav-text'
+    },
+    {
+        title:'Meus Favoritos',
+        path:"/meusfavoritos",
+        icon:<AiIcons.AiOutlineHeart />,
+        cName:'nav-text'
+    },
+    {
+        title:'Sair',
+        path:"/",
+        icon:<AiIcons.AiOutlineLogout/>,
         cName:'nav-text'
     }
 

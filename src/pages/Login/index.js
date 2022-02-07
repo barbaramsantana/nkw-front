@@ -28,7 +28,7 @@ class Login extends Component{
             }
             const response = await api.post("/auth/authenticate", {email, password});
             
-            console.log(response);
+            //console.log(response);
             
             login(response.data.token);
             nameuser(response.data.user.name);
@@ -55,20 +55,17 @@ class Login extends Component{
             <form onSubmit={this.handleSignIn}>
                 <Titulo1>Login</Titulo1>
                 <br />
-                <div className="mb-3">
+                <div className="form-group">
                     {this.state.error && <Attention>{this.state.error}</Attention>}
                     <label htmlFor="email" className="form-label">Email</label>
-                    <ContainerInput>
                     <Input type="email" name="email" className="form-control" id="email" required="required" placeholder="Digite seu email..." aria-describedby="email" onChange={e => this.setState({email: e.target.value})}/>
-                    </ContainerInput>
                 </div>
-                <div className="mb-3">
+                <div className="form-group">
                     <label htmlFor="password" className="form-label">Senha</label>
                     <br />
-                    <ContainerInput>
                     <Input type="password" name="password" id="password" className="form-control" required="required" placeholder="Digite sua senha..." onChange={e => this.setState({password: e.target.value})}/>
-                    </ContainerInput>
                 </div>
+                <br/>
                     <Button className="btn btn-primary" type="submit" id="password">Entrar</Button>
 
                 <p>

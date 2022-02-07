@@ -6,9 +6,7 @@ export const ContainerForm = styled.div`
   align-items: center;
   text-align: center;
   border-radius: 50px 50px 0px 0px;
-  margin-left: 10rem;
-  margin-right: 10rem;
-  margin-botton: 100%;
+  margin: 2rem; 
 `;
 //font-family: NTR;
 export const Logo = styled.div`

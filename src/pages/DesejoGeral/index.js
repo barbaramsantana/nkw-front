@@ -17,7 +17,7 @@ function DesejoGeral(){
     const {id} = useParams();
     const [items, setItems] = useState([]);
     const [user, setUser] = useState([]);
-    console.log(id);
+    //console.log(id);
 
     useEffect(()=>{
         async function loadDesejo() {
@@ -26,7 +26,7 @@ function DesejoGeral(){
     
           setItems(response.data.desejo);
           setUser(response.data.desejo.user);
-          console.log(response);
+          //console.log(response);
         }
         loadDesejo();
     },[]);

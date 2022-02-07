@@ -16,7 +16,7 @@ import {ContainerForm, Titulo1, Label, ContainerCaracteristicas, TextoLink, Text
 function Desejo(){
     const {id} = useParams();
     const [items, setItems] = useState([]);
-    console.log(id);
+    //console.log(id);
 
     useEffect(()=>{
         async function loadDesejo() {
@@ -24,7 +24,7 @@ function Desejo(){
           const response = await api.get(`/desejos/${id}`, {headers:{token:`Bearer ${token}`}});
     
           setItems(response.data.desejo);
-          console.log(response);
+          //console.log(response);
         }
         loadDesejo();
     },[]);
@@ -57,7 +57,7 @@ function Desejo(){
                 
                </div>
                <div className="row d-flex text-center">
-                    <ContainerCaracteristicas className="mb-5 col-6 col-lg-12 com-md-12 text-center">
+                    <ContainerCaracteristicas className="mb-5 col-10 col-lg-12 com-md-12 text-center">
                         <div className="row text-center">
                             <TextoLink className="form-floating mb-5 col-6 col-lg-4 text-center">
                                 Área:

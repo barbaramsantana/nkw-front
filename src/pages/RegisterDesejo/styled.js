@@ -7,8 +7,8 @@ export const ContainerForm = styled.div`
   align-items: center;
   text-align: center;
   border-radius: 50px 50px 50px 50px;
-  margin-left: 5rem;
-  margin-right: 5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
   padding-left: 1rem;
   padding-right: 1rem;
   padding-bottom:1rem;

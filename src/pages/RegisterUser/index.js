@@ -11,14 +11,17 @@ class RegisterUser extends Component{
         name: "",
         email: "",
         password: "",
+        passwordreply: "",
         error: ""
       };
       handleSignUp = async e => {
         e.preventDefault();
         //const token = getToken();
-        const { name, email, password } = this.state;
+        const { name, email, password, passwordreply } = this.state;
         if (!name || !email || !password) {
           this.setState({ error: "Preencha todos os dados para se cadastrar" });
+        } else if(password != passwordreply){
+          this.setState({ error: "Senhas diferentes, digite novamente" });
         } else {
           try {
             const data = {
@@ -45,24 +48,23 @@ class RegisterUser extends Component{
                     <label htmlFor="name" className="form-label">Nome</label>
                     {this.state.error && <p>{this.state.error}</p>}
                     <br />
-                    <ContainerInput>
                     <Input className="form-control" type="text" name="name" id="name" required="required" placeholder="Digite seu nome..." onChange={e => this.setState({name: e.target.value})}/>
-                    </ContainerInput>
                 </div>
                 <div className="mb-3">
                     <label htmlFor="email" className="form-label" >Email</label>
                     <br />
-                    <ContainerInput>
                     <Input className="form-control" type="email" name="email" id="email" required="required" placeholder="Digite seu email..." onChange={e => this.setState({email: e.target.value})}/>
-                    </ContainerInput>
                 </div>
 
                 <div className="mb-3">
                     <label htmlFor="password">Senha</label>
                     <br />
-                    <ContainerInput>
                     <Input className="form-control" type="password" name="password" id="password" required="required" placeholder="Digite sua senha..." onChange={e => this.setState({password: e.target.value})}/>
-                    </ContainerInput>
+                </div>
+                <div className="mb-3">
+                    <label htmlFor="password">Confirme sua senha</label>
+                    <br />
+                    <Input className="form-control" type="password" name="password" id="password" required="required" placeholder="Digite sua senha..." onChange={e => this.setState({passwordreply: e.target.value})}/>
                 </div>
 
                     <Button className="btn btn-primary" type="submit" id="password">Cadastrar</Button>

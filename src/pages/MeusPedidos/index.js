@@ -19,12 +19,12 @@ function MeusPedidos(){
         async function loadListDesejos() {
             try{
                 const token = getToken();
-                console.log(token);
+                //console.log(token);
                 const response = await api.get('/desejos',{headers:{token:`Bearer ${token}`}});
                 //const response = await api.get('/desejos');
         
                 setItems(response.data.desejos);
-                console.log(response);
+                //console.log(response);
             } catch(err){
                 console.error(err);
             }
@@ -36,7 +36,7 @@ function MeusPedidos(){
         try{
             const token = getToken();
             const response = await api.delete(`/desejos/${val}`, {headers:{token:`Bearer ${token}`}});
-            console.log(response);
+            //console.log(response);
             window.location.reload();
 
         } catch(err){
@@ -49,7 +49,7 @@ function MeusPedidos(){
                 const token = getToken();
                 const data = {"favorito": 0};
                 const response = await api.put(`/desejos/favorito/${id}`, data,{headers:{token:`Bearer ${token}`}});
-                console.log(response);
+                //console.log(response);
                 window.location.reload();
     
             } catch(err){
@@ -60,7 +60,7 @@ function MeusPedidos(){
                 const token = getToken();
                 const data = {"favorito": 1};
                 const response = await api.put(`/desejos/favorito/${id}`, data,{headers:{token:`Bearer ${token}`}});
-                console.log(response);
+                //console.log(response);
                 window.location.reload();
     
             } catch(err){
@@ -90,7 +90,7 @@ function MeusPedidos(){
                 <div className="row">
                 {Object.keys(items).map( item => (
                     //<ContainerDesejo>
-                    <ContainerDesejo className="col-6 col-lg-4 com-md-6">
+                    <ContainerDesejo className="col-10 col-lg-4 com-md-6">
                         <div className="col">
 
 
@@ -107,12 +107,12 @@ function MeusPedidos(){
                     <div id="icones-fav">
                         {/*isFavorito(items[item].favorito)*/}
                         {items[item].favorito == 1 && ( 
-                            <AiFillHeart color="#BB6BD9" onClick={async () =>{await isFavorito(items[item]._id, items[item].favorito)}}/>
+                            <AiFillHeart size="1.5rem" color="#BB6BD9" onClick={async () =>{await isFavorito(items[item]._id, items[item].favorito)}}/>
                         )}
                         {items[item].favorito == 0 && (
-                            <AiOutlineHeart color="#BB6BD9" onClick={async () =>{await isFavorito(items[item]._id, items[item].favorito)}}/>
+                            <AiOutlineHeart size="1.5rem" color="#BB6BD9" onClick={async () =>{await isFavorito(items[item]._id, items[item].favorito)}}/>
                         )}
-                        <BiTrash color="#BB6BD9" onClick={async () =>{await excluirDesejo(items[item]._id)}}/>
+                        <BiTrash size="1.5rem" color="#BB6BD9" onClick={async () =>{await excluirDesejo(items[item]._id)}}/>
                     </div>
                     </div>
                     </ContainerDesejo>

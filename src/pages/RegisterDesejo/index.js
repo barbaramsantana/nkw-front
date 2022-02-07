@@ -72,46 +72,46 @@ class RegisterDesejo extends Component{
                 <div>
                     <Label>Preencha com as caractetísticas que deseja:</Label>
                 </div>
-                <div className="row d-flex align-items-center">
+                <div className="row d-flex justify-content-center">
                 <ContainerCaracteristicas className="mb-3 col">
                     <div className="row">
 
-                <div className="form-floating mb-3 col-3">
+                <div className="form-floating mb-3 col-10 col-lg-4 com-md-6">
                     <Input type="number" className="form-control" min="0" name="quarto" id="quarto" required="required" placeholder="Numero de quartos..." onChange={e => this.setState({quarto: e.target.value})}/>
                     <Label htmlFor="quarto">Quarto*</Label>
                 </div>
 
-                <div className="form-floating mb-3 col-3">
+                <div className="form-floating mb-3 col-10 col-lg-4 com-md-6">
                     <Input className="form-control" type="number" min="0" name="suite" id="suite" required="required" placeholder="Numero de suites..." onChange={e => this.setState({suite: e.target.value})}/>
                     <Label htmlFor="suite">Suíte*</Label>
                 </div>
 
-                <div className="form-floating mb-3 col-3">
+                <div className="form-floating mb-3 col-10 col-lg-4 com-md-6">
                     <Input className="form-control" type="number" name="value" id="value" required="required" placeholder="R$" onChange={e => this.setState({valor: e.target.value})}/>
                     <Label htmlFor="email">Valor*</Label>
                 </div>
 
-                <div className="form-floating mb-3 col-3">
+                <div className="form-floating mb-3 col-10 col-lg-4 com-md-6">
                     <Input className="form-control" type="number" min="0" name="cozinha" id="cozinha" required="required" placeholder="Numero de cozinhas..." onChange={e => this.setState({cozinha: e.target.value})}/>
                     <Label htmlFor="cozinha">Cozinha*</Label>
                 </div>
 
-                <div className="form-floating mb-3 col-6">
+                <div className="form-floating mb-3 col-10 col-lg-8 com-md-6">
                     <Input className="form-control" type="text" name="text" id="text" required="required" placeholder="Bairro, cidade..." onChange={e => this.setState({localidade: e.target.value})}/>
                     <Label htmlFor="local">Local*</Label>
                 </div>
 
-                <div className="form-floating mb-3 col-3">
+                <div className="form-floating mb-3 col-10 col-lg-4 com-md-6">
                     <Input className="form-control" type="number" min="0" name="area" id="area" required="required" placeholder="Valor da área..." onChange={e => this.setState({area: e.target.value})}/>
                     <Label htmlFor="area">Área*</Label>
                 </div>
 
-                <div className="form-floating mb-3 col-3">
+                <div className="form-floating mb-3 col-10 col-lg-4 com-md-6">
                     <Input className="form-control" type="number" min="0" name="garagem" id="garagem" required="required" placeholder="Número de vagas de garagem..." onChange={e => this.setState({vagaGaragem: e.target.value})}/>
                     <Label htmlFor="area">Vaga de garagem*</Label>
                 </div>
 
-                <div className="form-floating mb-3 col-3">
+                <div className="form-floating mb-3 col-10 col-lg-4 com-md-6">
                     <Input className="form-control" type="number" name="condominio" id="condominio" required="required" placeholder="Valor da taxa de condomínio..." onChange={e => this.setState({taxaCond: e.target.value})}/>
                     <Label htmlFor="area">Taxa de condomínio*</Label>
                 </div>

@@ -27,7 +27,7 @@ function DesejoVenda(){
     
           setItems(response.data.desejo);
           setUser(response.data.desejo.user);
-          console.log(response);
+          //console.log(response);
         }
         loadDesejo();
     },[]);
@@ -45,33 +45,10 @@ function DesejoVenda(){
             </div>
             <br />
             <ContainerForm> 
-                <TextoMensagemForm action="https://api.staticforms.xyz/submit" method="POST">
-                <input type="hidden" name="accessKey" value="2a247bc9-4739-41c0-b273-f60877fc8a65"/>
-                <input type="hidden" name="redirectTo" value={`http://nkw-front.herokuapp.com/desejodevenda/${id}`}/>
-                <div class="mb-3 row">
-                    <label for="staticEmail" class="col-sm-2 col-form-label">Olá</label>
-                    <div class="col-sm-10">
-                        <input type="text" name="name" readonly class="form-control-plaintext" id="staticName" value={name}/>
-                    </div>
-                </div>
-                <input type="hidden" name="email" readonly class="form-control-plaintext" id="staticEmail" value={`Email de: ${email}`}/>
+                    <p>Olá, {name}</p>
                     <p>Que bom que está interessado(a) em tornar um dos desejos realidade!</p>
                     <p>Para isso, entre em contanto com o(a) criador(a) do desejo.</p>
-                <div class="mb-3 row">
-                    <label for="staticEmail" class="col-sm-2 col-form-label">Email:</label>
-                    <div class="col-sm-10">
-                        <input type="email" name="email" readonly class="form-control-plaintext" id="staticEmail" value={user.email}/>
-                    </div>
-                </div>
-                <input type="hidden" name="subject" readonly class="form-control-plaintext" id="staticEmail" value={`Desejo: ${id}`}/>
-                <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Se surgiu alguma dúvida entre em contanto e nos envie uma mensagem.</label>
-                    <textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="3"/>
-                </div> 
-
-                <Button>Enviar mensagem</Button>
-                </TextoMensagemForm>
-                  
+                    <p>Email: {user.email} </p>              
             </ContainerForm>
 </div>
     )}

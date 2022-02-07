@@ -5,9 +5,7 @@ export const ContainerForm = styled.div`
   justify-content: center;
   align-items: center;
   text-align: center;
-  border-radius: 50px 50px 0px 0px;
-  margin-left: 10rem;
-  margin-right: 10rem;
+  margin: 2rem;
   min-height: 100%;
 `;
 //font-family: NTR;

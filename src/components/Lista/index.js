@@ -4,7 +4,7 @@ import {Link, withRouter} from "react-router-dom";
 //import '/styleed.css';
 
 function Lista(desejos){
-    console.log(desejos);
+    //console.log(desejos);
     return(
         <div>
             <Link className="link-desejo" to="/desejo">
