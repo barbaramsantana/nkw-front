@@ -37,7 +37,8 @@ class Login extends Component{
             //console.log(getToken());
             
     
-            this.props.history.push("/meuspedidos");
+            // this.props.history.push("/meuspedidos");
+            this.props.history.push("/home");
           } catch (err) {
             console.log(err);
             this.setState({

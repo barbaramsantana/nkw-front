@@ -1,0 +1,12 @@
+export { default as Desejo } from './Desejo';
+export { default as DesejoGeral } from './DesejoGeral';
+export { default as DesejoVenda } from './DesejoVenda';
+export { default as Home } from './Home';
+export { default as Login } from './Login';
+export { default as MeusFavoritos } from './MeusFavoritos';
+export { default as MeusPedidos } from './MeusPedidos';
+export { default as Perfil } from './Perfil';
+export { default as PerfilEdite } from './PerfilEdite';
+export { default as RegisterDesejo } from './RegisterDesejo';
+export { default as RegisterUser } from './RegisterUser';
+export { default as TodosDesejos } from './TodosDesejos';

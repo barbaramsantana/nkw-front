@@ -1,14 +1,12 @@
 import React, { useState } from 'react';
-//import * as FaIcons from 'react-icons/fa';
+import { Link, useHistory } from 'react-router-dom';
+import { IconContext } from 'react-icons';
 import * as AiIcons from 'react-icons/ai';
-import { Link } from 'react-router-dom';
+import { IoIosMenu } from 'react-icons/io';
+import logonkw from '../../img/logo.png';
+import { getName } from '../../Auth';
 import Sidebar from '../Sidebar';
 import './styled.css';
-import logonkw from '../../img/logo.png';
-import { IconContext } from 'react-icons';
-//import usercircle from '../../img/User_cicrle.svg';
-import { getName } from '../../Auth';
-import { IoIosMenu } from 'react-icons/io';
 
 function Navbar() {
   const [sidebar, setSidebar] = useState(false);
@@ -16,18 +14,25 @@ function Navbar() {
 
   const showSidebar = () => setSidebar(!sidebar);
 
+  const history = useHistory();
+  const home = () => {
+    history.push("/home");
+  }
+
   return (
     <>
       <IconContext.Provider value={{ color: '#FFFFFF' }}>
         <div className='navbar'>
-          <img className="logonkw" src={logonkw} alt="logo nkw" className="img-fluid figure-img" width="100px" />
+          {/* <img className="logonkw" src={logonkw} alt="logo nkw" className="img-fluid figure-img" width="100px" /> */}
+          <button className='home-button' onClick={home}>
+          <img src={logonkw} alt="logo nkw" className="img-fluid figure-img" width="100px" />
+          </button>
+
           <Link style={{textDecoration: 'none', color: '#8F9BB3'}} to='#' className='menu-bars'>
           <div className='ali' onClick={showSidebar}>
-           Olá, {name}! 
+          Olá, {name}! 
           <IoIosMenu size="2em" color="#8F9BB3"/>
           </div>
-           {// <FaIcons.FaBars onClick={showSidebar} />
-}
           </Link>
         </div>
         <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>

@@ -43,13 +43,5 @@ export const Sidebar = [
     }
 
 ]
-/*<PrivateRoute path="/meuspedidos" component={() => <MeusPedidos/>}/>
-    <PrivateRoute path="/desejo/:id" component={() => <Desejo/>}/>
-    <PrivateRoute path="/desejogeral/:id" component={() => <DesejoGeral/>}/>
-    <PrivateRoute path="/perfil" component={() => <Perfil/>}/>
-    <PrivateRoute path="/perfiledite" component={() => <PerfilEdite/>}/>
-    <PrivateRoute path="/meusfavoritos" component={() => <MeusFavoritos/>}/>
-    <PrivateRoute path="/registerdesejos" component={() => <RegisterDesejo/>}/>
-    <PrivateRoute path="/todosdesejos" component={() => <TodosDesejos/>}/>*/ 
 
 export default Sidebar;

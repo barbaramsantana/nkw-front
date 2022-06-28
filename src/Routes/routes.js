@@ -1,17 +1,7 @@
 import React from 'react';
 import { Switch, Route, BrowserRouter, Redirect } from 'react-router-dom';
 import { isAuthenticated } from '../Auth/index';
-import Desejo from '../pages/Desejo';
-import DesejoGeral from '../pages/DesejoGeral';
-import DesejoVenda from '../pages/DesejoVenda';
-import Login from '../pages/Login';
-import MeusFavoritos from '../pages/MeusFavoritos';
-import MeusPedidos from '../pages/MeusPedidos';
-import Perfil from '../pages/Perfil';
-import PerfilEdite from '../pages/PerfilEdite';
-import RegisterDesejo from '../pages/RegisterDesejo';
-import RegisterUser from '../pages/RegisterUser';
-import TodosDesejos from '../pages/TodosDesejos';
+import { Desejo, DesejoGeral, DesejoVenda, Home, Login, MeusFavoritos, MeusPedidos, Perfil, PerfilEdite, RegisterDesejo, RegisterUser, TodosDesejos} from '../pages';
 
 const PrivateRoute = ({ component: Component, ...rest }) => (
   <Route
@@ -41,6 +31,7 @@ return(
     <PrivateRoute path="/registerdesejos" component={() => <RegisterDesejo/>}/>
     <PrivateRoute path="/todosdesejos" component={() => <TodosDesejos/>}/>
     <PrivateRoute path="/desejodevenda/:id" component={() => <DesejoVenda/>}/>
+    <PrivateRoute path="/home" component={() => <Home/>}/>
   </Switch>
   </BrowserRouter>
 )
