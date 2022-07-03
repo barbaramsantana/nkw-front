@@ -1,0 +1,26 @@
+.body {
+    background-color: #E4E9F2;
+    font-family: Poppins;
+    font-style: normal;
+}
+
+.main-title {
+    border-bottom: 1px solid rgba(130, 130, 130, 0.2);
+    margin-bottom: 25px;
+}
+
+.categories-title {
+    border: 1px solid rgba(130, 130, 130, 0.5);
+    border-bottom: none;
+    background-color: #D9D9D9;
+    border-radius: 4px;
+    /* display: inline-block; */
+}
+
+.list-group {
+    border: 1px solid rgba(130, 130, 130, 0.5);
+}
+
+.card {
+    width: 18rem;
+}
