@@ -6,6 +6,12 @@ import { BiUserCircle } from 'react-icons/bi';
 
 export const Sidebar = [
     {
+    title:'Início',
+    path:"/home",
+    icon:<AiIcons.AiOutlineHome/>,
+    cName: 'nav-text'
+    },
+    {
     title:'Perfil',
     path:"/perfil",
     icon:<BiUserCircle/>,
