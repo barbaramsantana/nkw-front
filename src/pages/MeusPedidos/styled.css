@@ -1,4 +1,6 @@
-.add-circle{
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+
+.add-circle {
     width: 45px;
     height: 45px;
     color: #9B51E0;
@@ -7,31 +9,46 @@
     text-align: center;
     opacity: 35%;
 }
-.add-circle:hover{
+
+.add-circle:hover {
     color: #9B51E0;
     opacity: 100%;
 }
-.meus-desejos{
+
+.meus-desejos {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-.new-desejo{
+
+.new-desejo {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
-font-weight: normal;
-font-size: 20px;
-line-height: 30px;
-/* identical to box height, or 150% */
-justify-content: center;
-align-items: center;
-text-align: right;
-margin-right: 20px;
-
-
-color: #8F9BB3;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height, or 150% */
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+    margin-right: 20px;
+    color: #8F9BB3;
 }
-.group-my-desejos{
-justify-content: center;
-align-items: center;
-text-align: right;   
+
+.group-my-desejos {
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+}
+
+.bi {
+    color: #9B51E0;
+    margin: 0;
+}
+
+.trashButton {
+    background-color: #FFF;
+    border: none;
+}
+.trashButton:hover {
+    cursor: pointer;
 }

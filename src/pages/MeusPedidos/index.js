@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { Link, withRouter } from "react-router-dom";
-import Cabecalho from '../../components/Cabecalho';
-import Lista from '../../components/Lista';
 import { Titulo1, ContainerForm, ContainerCaracteristicas, ContainerDesejo, ContainerText, TextoLink } from './styled.js';
 import './styled.css';
 import { AiFillHeart, AiFillPlusCircle, AiOutlineHeart } from "react-icons/ai";
@@ -9,8 +7,9 @@ import { BiHeart, BiTrash } from "react-icons/bi";
 import api from '../../services/api';
 import { getToken } from '../../Auth/index';
 import { getName } from '../../Auth/index';
-import axios from 'axios';
 import Navbar from '../../components/Navbar/index';
+import OpenModal from '../../utils/Modal';
+
 
 function MeusPedidos() {
     const [items, setItems] = useState([]);
@@ -31,18 +30,7 @@ function MeusPedidos() {
         }
         loadListDesejos();
     }, []);
-    //const response = await api.post("/desejos");
-    async function excluirDesejo(val) {
-        try {
-            const token = getToken();
-            const response = await api.delete(`/desejos/${val}`, { headers: { token: `Bearer ${token}` } });
-            //console.log(response);
-            window.location.reload();
 
-        } catch (err) {
-            console.error(err);
-        }
-    }
     async function isFavorito(id, val) {
         if (val === 1) {
             try {
@@ -111,26 +99,7 @@ function MeusPedidos() {
                                                 {items[item].favorito === 0 && (
                                                     <AiOutlineHeart size="1.5rem" color="#BB6BD9" onClick={async () => { await isFavorito(items[item]._id, items[item].favorito) }} style={{ cursor: "pointer" }} />
                                                 )}
-                                                <BiTrash size="1.5rem" color="#BB6BD9" data-bs-toggle="modal" data-bs-target="#confirmation"/>
-
-                                                {/* <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#confirmation">
-                                                    Launch demo modal
-                                                </button> */}
-
-                                                <div class="modal fade" id="confirmation" tabindex="-1" aria-labelledby="confirmationLabel" aria-hidden="true">
-                                                    <div class="modal-dialog">
-                                                        <div class="modal-content">
-                                                            <div class="modal-header">
-                                                                <h5 class="modal-title" id="confirmationLabel">Tem certeza que deseja excluir este desejo?</h5>
-                                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                            </div>
-                                                            <div class="modal-footer">
-                                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                                                                <button type="button" class="btn btn-primary" onClick={async () => { await excluirDesejo(items[item]._id)}} >Sim</button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                                <OpenModal item={items[item]._id}/>
                                             </div>
                                         </div>
                                     </ContainerDesejo>

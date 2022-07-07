@@ -59,6 +59,14 @@ const Home = () => {
                                 <input class="form-check-input me-1" type="checkbox" value="" />
                                 Eletrodomésticos
                             </label>
+                            <label className="list-group-item border-0">
+                                <input class="form-check-input me-1" type="checkbox" value="" />
+                                Eletrodomésticos
+                            </label>
+                            <label className="list-group-item border-0">
+                                <input class="form-check-input me-1" type="checkbox" value="" />
+                                Eletrodomésticos
+                            </label>
                         </div>
                     </div>
 
@@ -108,7 +116,6 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
 
