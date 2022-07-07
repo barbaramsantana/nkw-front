@@ -3,6 +3,7 @@ import { Button, Modal } from 'react-bootstrap';
 import { BiTrash } from 'react-icons/bi';
 import api from '../services/api';
 import { getToken } from '../Auth/index';
+import './styled.css';
 
 async function excluirDesejo(val) {
     try {
@@ -24,7 +25,7 @@ const OpenModal = ({item}) => {
     return (
         <>
             <BiTrash size="1.5rem" color="#BB6BD9" onClick={handleShow} />
-            <Modal show={show} onHide={handleClose}>
+            <Modal dialogClassName="custom-dialog" show={show} onHide={handleClose}>
                 <Modal.Body>
                     Tem certeza que deseja excluir este desejo?
                 </Modal.Body>
