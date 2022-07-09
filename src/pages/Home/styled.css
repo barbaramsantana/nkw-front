@@ -7,20 +7,21 @@
 .main-title {
     border-bottom: 1px solid rgba(130, 130, 130, 0.2);
     margin-bottom: 25px;
+    /* left: 0; */
+    /* width: 80%; */
 }
 
-.categories-title {
-    border: 1px solid rgba(130, 130, 130, 0.5);
-    border-bottom: none;
-    background-color: #D9D9D9;
-    border-radius: 4px;
-    /* display: inline-block; */
-}
-
-.list-group {
-    border: 1px solid rgba(130, 130, 130, 0.5);
+.container {
+    border: 2px solid #000;
+    /* padding: 0;
+    margin: 0; */
 }
 
 .card {
-    width: 18rem;
+    width: 16rem;
 }
+
+/* .card-img-top {
+    width: 25%;
+    height: 25%;
+} */

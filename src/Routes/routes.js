@@ -2,6 +2,7 @@ import React from 'react';
 import { Switch, Route, BrowserRouter, Redirect } from 'react-router-dom';
 import { isAuthenticated } from '../Auth/index';
 import { Desejo, DesejoGeral, DesejoVenda, Home, Login, MeusFavoritos, MeusPedidos, Perfil, PerfilEdite, RegisterDesejo, RegisterUser, TodosDesejos} from '../pages';
+import { Categories } from '../components';
 
 const PrivateRoute = ({ component: Component, ...rest }) => (
   <Route
@@ -32,6 +33,7 @@ return(
     <PrivateRoute path="/todosdesejos" component={() => <TodosDesejos/>}/>
     <PrivateRoute path="/desejodevenda/:id" component={() => <DesejoVenda/>}/>
     <PrivateRoute path="/home" component={() => <Home/>}/>
+    <PrivateRoute path="/categories" component={() => <Categories/>}/>
   </Switch>
   </BrowserRouter>
 )

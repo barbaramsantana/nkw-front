@@ -1,0 +1,25 @@
+.body {
+    background-color: #E4E9F2;
+    font-family: Poppins;
+    font-style: normal;
+}
+
+.custom-accordion {
+    /* position: absolute;
+    left: 100px; */
+    /* display: inline-block; */
+    width: 250px;
+}
+
+.custom-accordion:active {
+    background-color: #FFF;
+}
+
+.title {
+    /* background-color: gray; */
+    margin-right: 8px;
+}
+
+.categories {
+    font-size: 20px;
+}
