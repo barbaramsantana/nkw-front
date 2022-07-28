@@ -18,8 +18,9 @@
 .title {
     /* background-color: gray; */
     margin-right: 8px;
+    color: #828282;
 }
 
 .categories {
-    font-size: 20px;
+    font-size: 18px;
 }

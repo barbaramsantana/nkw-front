@@ -52,11 +52,7 @@ export const Label = styled.label`
 font-family: Poppins;
 font-style: normal;
 font-weight: 500;
-font-size: 20px;
 line-height: 30px;
-/* or 120% */
-
-
 color: #8F9BB3;
 `;
 
@@ -69,6 +65,12 @@ border-radius: 8px;
 height: 50px;
 `;
 export const InputDescription = styled.input`
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+line-height: 30px;
+color: #8F9BB3;
+
 background-color: #F4F4FC;
 border: 1px solid #E4E9F2;
 box-sizing: border-box;
@@ -76,7 +78,7 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 border-radius: 8px;
 height: 50px;
 `;
-export const Button = styled.input`
+export const SubmitButton = styled.input`
 background-color: #BB6BD9;
 border-radius: 8px;
 color: #FFFFFF;

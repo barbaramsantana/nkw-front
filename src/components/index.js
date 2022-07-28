@@ -1,4 +1,5 @@
 export { default as Cabecalho } from './Cabecalho';
+export { default as Cards } from './Cards';
 export { default as Categories } from './Categories';
 export { default as Lista } from './Lista';
 export { default as Menu } from './Menu';

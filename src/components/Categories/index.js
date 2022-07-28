@@ -15,10 +15,12 @@ const Categories = () => {
                     </Accordion.Header>
                     <Accordion.Body>
                         <Form className="categories">
-                            <Form.Check type="checkbox" label="Exemplo" />
-                            <Form.Check type="checkbox" label="Exemplo" />
-                            <Form.Check type="checkbox" label="Exemplo" />
-                            <Form.Check type="checkbox" label="Exemplo" />
+                            <Form.Check type="checkbox" label="Imóveis" />
+                            <Form.Check type="checkbox" label="Eletrodomésticos" />
+                            <Form.Check type="checkbox" label="Automóveis" />
+                            <Form.Check type="checkbox" label="Tecnologia" />
+                            <Form.Check type="checkbox" label="Estética" />
+                            <Form.Check type="checkbox" label="Livros" />
                         </Form>
                     </Accordion.Body>
                 </Accordion.Item>

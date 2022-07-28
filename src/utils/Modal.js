@@ -34,7 +34,7 @@ const OpenModal = ({item}) => {
                         Cancelar
                     </Button>
                     <Button className="confirmationButton"  style={{ backgroundColor: "#BB6BD9", border:0 }} onClick={async () =>{await excluirDesejo(item)}} >
-                        Sim
+                        Excluir
                     </Button>
                 </Modal.Footer>
             </Modal>
